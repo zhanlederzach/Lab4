@@ -1,0 +1,9 @@
+C:\Users\Admin\Source\Repos\Lab3\Json\Json\bin\Debug\Json.exe.config
+C:\Users\Admin\Source\Repos\Lab4\Json\Json\bin\Debug\Json.exe.config
+C:\Users\Admin\Source\Repos\Lab4\Json\Json\bin\Debug\Json.exe
+C:\Users\Admin\Source\Repos\Lab4\Json\Json\bin\Debug\Json.pdb
+C:\Users\Admin\Source\Repos\Lab4\Json\Json\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Source\Repos\Lab4\Json\Json\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Source\Repos\Lab4\Json\Json\obj\Debug\Json.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Source\Repos\Lab4\Json\Json\obj\Debug\Json.exe
+C:\Users\Admin\Source\Repos\Lab4\Json\Json\obj\Debug\Json.pdb
