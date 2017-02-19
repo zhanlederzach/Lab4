@@ -41,20 +41,23 @@ namespace Example2
     {
         static void Main(string[] args)
         {
+            //создаем сериализатор типа комплекс
             XmlSerializer xs = new XmlSerializer(typeof(Complex));
-            Complex s = new Complex(5, 3);
-            FileStream fs = new FileStream("complexXML.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
-            xs.Serialize(fs, s);
-            fs.Close();
+            
+            Complex s = new Complex(5, 3);// создаем объект класса комплекс
+            FileStream fs = new FileStream("complexXML.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);//открываем поток для записи
+            xs.Serialize(fs, s);//записываем куда- в тхт документ,что - данные
+            fs.Close();//закрываем поток
 
 
-            Complex s2 = new Complex();
-            FileStream fs2 = new FileStream("complexXML.txt", FileMode.Open, FileAccess.Read);
-            s2 = xs.Deserialize(fs2) as Complex;
-            Console.WriteLine(s);
-            Console.WriteLine(s2);
+            Complex s2 = new Complex();//создаем пустой объект класса комплекс
+            FileStream fs2 = new FileStream("complexXML.txt", FileMode.Open, FileAccess.Read);//открываем поток для чтения
+            s2 = xs.Deserialize(fs2) as Complex;//переписываем данные в виде комплекса
+            
+            //Console.WriteLine(s);
+            //Console.WriteLine(s2);
 
-            fs2.Close();
+            fs2.Close();//закрываем поток чтения
         }
     }
 }
