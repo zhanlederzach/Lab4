@@ -1,0 +1,6 @@
+C:\Users\Admin\Source\Repos\Lab4\bin\bin\bin\Debug\bin.exe.config
+C:\Users\Admin\Source\Repos\Lab4\bin\bin\bin\Debug\bin.exe
+C:\Users\Admin\Source\Repos\Lab4\bin\bin\bin\Debug\bin.pdb
+C:\Users\Admin\Source\Repos\Lab4\bin\bin\obj\Debug\bin.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Source\Repos\Lab4\bin\bin\obj\Debug\bin.exe
+C:\Users\Admin\Source\Repos\Lab4\bin\bin\obj\Debug\bin.pdb

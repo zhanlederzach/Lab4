@@ -13,13 +13,17 @@ namespace Example2
     {
         int a;
         int b;
-        public Complex()
-        { }
+       
         //конструктор для комплексных чисел
         public Complex(int a, int b)
         {
             this.a = a;
             this.b = b;
+        }
+        public Complex()
+        {
+            this.a = 5;
+            this.b = 3;
         }
         //метод сложения 
         public static Complex operator +(Complex c1, Complex c2)
@@ -37,6 +41,7 @@ namespace Example2
             return string.Format("{0} + {1}i", a, b);
         }
     }
+
     class Program
     {
         static void Main(string[] args)
@@ -44,9 +49,9 @@ namespace Example2
             //создаем сериализатор типа комплекс
             XmlSerializer xs = new XmlSerializer(typeof(Complex));
             
-            Complex s = new Complex(5, 3);// создаем объект класса комплекс
+            Complex s = new Complex();// создаем объект класса комплекс
             FileStream fs = new FileStream("complexXML.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);//открываем поток для записи
-            xs.Serialize(fs, s);//записываем куда- в тхт документ,что - данные
+            xs.Serialize(fs, s);//записываем куда-в тхт документ,что - данные
             fs.Close();//закрываем поток
 
 
@@ -54,8 +59,8 @@ namespace Example2
             FileStream fs2 = new FileStream("complexXML.txt", FileMode.Open, FileAccess.Read);//открываем поток для чтения
             s2 = xs.Deserialize(fs2) as Complex;//переписываем данные в виде комплекса
             
-            //Console.WriteLine(s);
-            //Console.WriteLine(s2);
+            Console.WriteLine(s);
+            Console.WriteLine(s2);
 
             fs2.Close();//закрываем поток чтения
         }
